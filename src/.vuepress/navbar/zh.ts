@@ -1,7 +1,7 @@
 import { navbar } from "vuepress-theme-hope";
 
 export const zhNavbar = navbar([
-  { text: "首页", icon: "home", link: "/" },
+  { text: "博客首页", icon: "home", link: "/" },
   { 
     text: "代码笔记", 
     icon: "code", 
@@ -9,21 +9,24 @@ export const zhNavbar = navbar([
     activeMatch: "^/codes/$",
   },
   {
-    text: "扩展包",
+    text: "常用扩展",
     icon: "folder",
     prefix: "/packages/",
     children: [
       {
         text: "Laravel",
-        icon: "edit",
         link: "laravel/",
       },
       {
         text: "Golang",
-        icon: "edit",
         link: "golang/",
       },
     ],
   },
-  { text: "开源软件", icon: "software", link: "/software/" },
+  { 
+    text: "开源软件", 
+    icon: "software", 
+    link: "/softwares/",
+    activeMatch: "^/softwares/$",
+  },
 ]);
