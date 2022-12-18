@@ -3,39 +3,45 @@ import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
+  // 当前网站部署到的域名
   hostname: "https://an5dy.github.io",
 
+  // 设置夜间模式切换
   darkmode: "toggle",
 
+  // 文章显示的默认作者
   author: {
     name: "An5dy",
     url: "https://an5dy.github.io",
   },
 
+  // 设置字体
   iconAssets: "iconfont",
 
+  // 设置 logo
   logo: "/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  // 设置导航栏上 git 导航
+  repo: "An5dy/An5dy.github.io",
 
   docsDir: "docs",
 
-  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+  pageInfo: ["Author", "Date", "Category", "Tag", "ReadingTime"],
 
   blog: {
     medias: {
-      Email: "https://example.com",
+      Email: "mailto:846562014@qq.com",
       GitHub: "https://github.com/An5dy",
-      Gmail: "https://example.com",
+      Gmail: "mailto:zhangze846562014@gmail.com",
     },
   },
 
   locales: {
     "/": {
-      // navbar
+      // 导航栏
       navbar: zhNavbar,
 
-      // sidebar
+      // 侧边栏
       sidebar: zhSidebar,
 
       footer: '使用 <a href="https://vuepress-theme-hope.github.io/v2/" target="_blank">VuePress Theme Hope</a> 主题',
