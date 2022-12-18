@@ -11,17 +11,8 @@ export const zhNavbar = navbar([
   {
     text: "常用扩展",
     icon: "folder",
-    prefix: "/packages/",
-    children: [
-      {
-        text: "Laravel",
-        link: "laravel/",
-      },
-      {
-        text: "Golang",
-        link: "golang/",
-      },
-    ],
+    link: "/packages/",
+    activeMatch: "^/packages/$",
   },
   { 
     text: "开源软件", 

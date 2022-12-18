@@ -29,4 +29,12 @@ export const zhSidebar = sidebar({
       children: "structure",
     }
   ],
+  "/packages/": [
+    "",
+    {
+      text: "Laravel",
+      prefix: "laravel/",
+      children: "structure",
+    }
+  ],
 });
