@@ -38,5 +38,5 @@ projects:
     desc: 渐进式 JavaScript 框架。
     link: https://cn.vuejs.org/
 
-footer: 使用 <a href="https://vuepress-theme-hope.github.io/v2/" target="_blank">VuePress Theme Hope</a> 主题
+footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题
 ---
