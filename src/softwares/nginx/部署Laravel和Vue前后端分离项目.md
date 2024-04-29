@@ -7,7 +7,7 @@ article: true
 timeline: true
 ---
 
-##Nginx 配置
+## Nginx 配置
 
 主要利用 Nginx 的反向代理功能，前后端项目通过代理到不同的端口号，来区分 Laravel 和 Vue 单页面项目。 
 
@@ -46,7 +46,7 @@ server {
 }
 ```
 
-####部署 Vue 单页面项目
+#### 部署 Vue 单页面项目
 
 Nginx 配置文件
 
@@ -74,7 +74,7 @@ server {
 }
 ```
 
-####部署 Nginx 反向代理
+#### 部署 Nginx 反向代理
 
 分别代理 Laravel 和 Vue 项目，以端口来区分
 
