@@ -31,8 +31,8 @@ server {
   location = /favicon.ico { access_log off; log_not_found off; }
   location = /robots.txt  { access_log off; log_not_found off; }
 
-  # access_log  /var/log/nginx/nginx.zb-evaluation.access.log  main;
-  error_log  /var/log/nginx/nginx.zb-evaluation.error.log warn;
+  # access_log  /var/log/nginx/nginx.laravel.access.log  main;
+  error_log  /var/log/nginx/nginx.laravel.error.log warn;
 
   error_page 404 /index.php;
 
@@ -53,8 +53,8 @@ Nginx 配置文件
 ```nginx
 server {
   listen 8181;
-  root /www/zb-evaluation-front;
-  index /wwww/dist/index.html;
+  root /www/front;
+  index index.html;
   server_name localhost;
 
   location / {
