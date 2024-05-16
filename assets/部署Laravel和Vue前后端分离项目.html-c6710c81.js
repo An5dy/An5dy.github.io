@@ -15,8 +15,8 @@ import{_ as n,W as s,X as a,a0 as e}from"./framework-8a0a3771.js";const i={},p=e
   <span class="token directive"><span class="token keyword">location</span> = /favicon.ico</span> <span class="token punctuation">{</span> <span class="token directive"><span class="token keyword">access_log</span> <span class="token boolean">off</span></span><span class="token punctuation">;</span> <span class="token directive"><span class="token keyword">log_not_found</span> <span class="token boolean">off</span></span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
   <span class="token directive"><span class="token keyword">location</span> = /robots.txt</span>  <span class="token punctuation">{</span> <span class="token directive"><span class="token keyword">access_log</span> <span class="token boolean">off</span></span><span class="token punctuation">;</span> <span class="token directive"><span class="token keyword">log_not_found</span> <span class="token boolean">off</span></span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
 
-  <span class="token comment"># access_log  /var/log/nginx/nginx.zb-evaluation.access.log  main;</span>
-  <span class="token directive"><span class="token keyword">error_log</span>  /var/log/nginx/nginx.zb-evaluation.error.log warn</span><span class="token punctuation">;</span>
+  <span class="token comment"># access_log  /var/log/nginx/nginx.laravel.access.log  main;</span>
+  <span class="token directive"><span class="token keyword">error_log</span>  /var/log/nginx/nginx.laravel.error.log warn</span><span class="token punctuation">;</span>
 
   <span class="token directive"><span class="token keyword">error_page</span> <span class="token number">404</span> /index.php</span><span class="token punctuation">;</span>
 
@@ -30,8 +30,8 @@ import{_ as n,W as s,X as a,a0 as e}from"./framework-8a0a3771.js";const i={},p=e
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="部署-vue-单页面项目" tabindex="-1"><a class="header-anchor" href="#部署-vue-单页面项目" aria-hidden="true">#</a> 部署 Vue 单页面项目</h4><p>Nginx 配置文件</p><div class="language-nginx line-numbers-mode" data-ext="nginx"><pre class="language-nginx"><code><span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
   <span class="token directive"><span class="token keyword">listen</span> <span class="token number">8181</span></span><span class="token punctuation">;</span>
-  <span class="token directive"><span class="token keyword">root</span> /www/zb-evaluation-front</span><span class="token punctuation">;</span>
-  <span class="token directive"><span class="token keyword">index</span> /wwww/dist/index.html</span><span class="token punctuation">;</span>
+  <span class="token directive"><span class="token keyword">root</span> /www/front</span><span class="token punctuation">;</span>
+  <span class="token directive"><span class="token keyword">index</span> index.html</span><span class="token punctuation">;</span>
   <span class="token directive"><span class="token keyword">server_name</span> localhost</span><span class="token punctuation">;</span>
 
   <span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
